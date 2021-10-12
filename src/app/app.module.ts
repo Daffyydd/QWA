@@ -10,9 +10,10 @@ import { HelloComponent } from './hello.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { AppRoutingModule } from './modules/app-routing/app-routing.module';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,HttpClientModule,HttpClientInMemoryWebApiModule,HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,{dataEncapsulation:false}) ],
+  imports:      [ BrowserModule, FormsModule,HttpClientModule,HttpClientInMemoryWebApiModule,HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,{dataEncapsulation:false}),AppRoutingModule ],
   declarations: [ AppComponent, HelloComponent,HeroesComponent,HeroDetailComponent,MessagesComponent ],
   bootstrap:    [ AppComponent ]
 })
