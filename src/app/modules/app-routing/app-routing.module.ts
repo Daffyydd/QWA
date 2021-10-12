@@ -4,15 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeroesComponent } from '../../components/heroes/heroes.component';
 
 const routes: Routes = [
-  { path: 'heroes', component: HeroesComponent }
+  { path: '', component: HeroesComponent },
+  { path: 'heroes', component: HeroesComponent },
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes) 
-  ],
-  exports: [ RouterModule ],
-  declarations: []
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+  declarations: [],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
