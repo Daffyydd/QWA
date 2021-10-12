@@ -9,10 +9,11 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
+import { MessagesComponent } from './components/messages/messages.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule,HttpClientInMemoryWebApiModule,HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,{dataEncapsulation:false}) ],
-  declarations: [ AppComponent, HelloComponent,HeroesComponent,HeroDetailComponent ],
+  declarations: [ AppComponent, HelloComponent,HeroesComponent,HeroDetailComponent,MessagesComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
