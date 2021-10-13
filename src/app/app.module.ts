@@ -13,10 +13,14 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { AppRoutingModule } from './modules/app-routing/app-routing.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeroSearchComponent } from './components/hero-search/hero-search.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { ProfileComponent } from './components/user/profile/profile.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule,HttpClientInMemoryWebApiModule,HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,{dataEncapsulation:false}),AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent,HeroesComponent,HeroDetailComponent,MessagesComponent,DashboardComponent,HeroSearchComponent ],
+  declarations: [ AppComponent, HelloComponent,HeroesComponent,HeroDetailComponent,MessagesComponent,DashboardComponent,HeroSearchComponent,LoginComponent,RegisterComponent,ProfileComponent ],
+  providers: [authInterceptorProviders],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
