@@ -16,6 +16,7 @@ import { HeroSearchComponent } from './components/hero-search/hero-search.compon
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
+import { authInterceptorProviders } from './helpers/auth.interceptor';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule,HttpClientInMemoryWebApiModule,HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,{dataEncapsulation:false}),AppRoutingModule ],
