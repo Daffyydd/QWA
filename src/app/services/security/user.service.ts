@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+const AUTH_API = 'api/';
+@Injectable({
+  providedIn: 'root',
+})
 export class UserService {
-
-  constructor() { }
-
+  constructor() {}
 }
